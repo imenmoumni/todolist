@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tod .css">
+</head>
+<body>
+
+        
+    
+ <h2 style="color: rgb(8, 184, 52); padding: 30px;">To Do List</h2>
+  <form id="todoForm">
+     <input id="todoInput">
+        <button style="background-color: yellow; border-radius: 10px;" type="button" onclick="todolist()">Click Me</button>
+    </form></body>
+   <ol id="todolist">
+
+    </ol>
+    <script>
+        function todolist(){
+            var item = document.getElementById("todoInput").value
+            var text = document.createTextNode(item)
+            var newItem = document.createElement("li")
+            newItem.appendChild(text)
+            document.getElementById("todolist").appendChild(newItem)
+        } 
+    </script>
+</body>
+</html>
